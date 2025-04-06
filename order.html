@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Order Details - Farmer Management</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function confirmOrder() {
+      alert("Order Confirmed! Thank you for shopping.");
+      return false;
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Order Details</h1>
+  </header>
+
+  <section class="container">
+    <form onsubmit="return confirmOrder();">
+      <label>Name: <input type="text" required></label><br>
+      <label>Contact Number: <input type="text" required></label><br>
+      <label>Address: <textarea required></textarea></label><br>
+      <label>Pincode: <input type="text" required></label><br>
+      <label>City: <input type="text" required></label><br>
+      <label>State: <input type="text" required></label><br>
+
+      <h3>Payment Mode</h3>
+      <label><input type="radio" name="payment" required> Cash on Delivery</label><br>
+      <label><input type="radio" name="payment"> PhonePe</label><br>
+      <label><input type="radio" name="payment"> Debit/Credit Card</label><br>
+      <label><input type="radio" name="payment"> Net Banking</label><br><br>
+
+      <button type="submit">Place Order</button>
+    </form>
+  </section>
+</body>
+</html>
