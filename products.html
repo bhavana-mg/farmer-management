@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Products - Farmer Management</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Products</h1>
+  </header>
+
+  <section class="container" id="vegetables">
+    <h2>Vegetables</h2>
+    <div class="grid">
+      <div class="card">
+        <h4>Tomato</h4>
+        <p>Harvest in 60 days | Water daily | Fertilize bi-weekly</p>
+        <button onclick="addToCart('Tomato')">Add to Cart</button>
+      </div>
+      <!-- Add more vegetable cards -->
+    </div>
+  </section>
+
+  <section class="container" id="fruits">
+    <h2>Fruits</h2>
+    <div class="grid">
+      <div class="card">
+        <h4>Mango</h4>
+        <p>Harvest in Summer | Water weekly | Fertilize seasonally</p>
+        <button onclick="addToCart('Mango')">Add to Cart</button>
+      </div>
+      <!-- Add more fruit cards -->
+    </div>
+  </section>
+
+  <section class="container" id="trees">
+    <h2>Trees</h2>
+    <div class="grid">
+      <div class="card">
+        <h4>Coconut Tree</h4>
+        <p>Harvest: Summer | Water: Weekly | Fertilizer: Organic mix</p>
+        <button onclick="addToCart('Coconut Tree')">Add to Cart</button>
+      </div>
+      <!-- Add more tree cards -->
+    </div>
+  </section>
+
+  <section class="container">
+    <p id="cartCount">Items in Cart: 0</p>
+    <a href="order.html"><button>Next: Order Now</button></a>
+  </section>
+</body>
+</html>
